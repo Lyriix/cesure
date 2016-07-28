@@ -58,6 +58,8 @@ if(isset($_POST['filiere']))
     $filiere = htmlspecialchars($_POST['filiere']);
 }
 
+
+
 /*
 /On possède les variables verifiées : $email, $mdp_hache, $nom, $prenom, $filiere
 /Non verifiées $_POST['annee']
@@ -77,6 +79,7 @@ $req->execute(array(
     'num_cesure' => 0, //par défaut, quand aucune cesure n'est définit lors de l'inscription
     'mdp' => $mdp_hache
 ));
-echo 'ajoute';
-//header('Location: connexion.php');
+
+
+header('Location: ../index.php');
 ?>
