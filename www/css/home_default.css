@@ -1,4 +1,3 @@
-
 html{
     background-color: black;
 }
@@ -48,4 +47,18 @@ article p{
     
 }
 
+table{
+    border-collapse: collapse;
+}
+tr{
+    color: white;
+}
 
+td{
+    border: 1px solid white;
+    
+}
+
+th{
+    border: 2px solid white;
+}

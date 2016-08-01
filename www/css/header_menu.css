@@ -49,8 +49,9 @@ html{
    
 }
 
-.main-nav li.dropdown{
+.main-nav li .dropdown{
     display: inline-block;
+    
     
 }
 

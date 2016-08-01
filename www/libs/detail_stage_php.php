@@ -1,6 +1,6 @@
 <?php 
 
-/* Réalisation de la procédure d'inscription */
+/* recuperation et affichage des details d'un stage  */
 
 //Conexion à la BDD
 ini_set('display_errors','on');
