@@ -18,7 +18,7 @@
         </div>
     </li>
     <li class="dropdown">
-        <a href="addInternship.php" class="dropbtn">AJOUTER UN STAGE<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
+        <a href="/www/modules/addInternship.php" class="dropbtn">AJOUTER UN STAGE<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
     </li>
     <li class="dropdown">
         <a href="/www/modules/profil.php" class="dropbtn">PROFIL<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
