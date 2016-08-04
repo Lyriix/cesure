@@ -25,6 +25,6 @@
     </li>
     
     <li class="dropdown" id="sign">
-        <a href="#" class="dropbtn">DECONNEXION<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
+        <a href="/www/libs/deconnexion_php.php" class="dropbtn">DECONNEXION<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
     </li>
 </ul>
