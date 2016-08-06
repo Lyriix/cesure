@@ -3,8 +3,10 @@
 <head>
     <title>Blank Standard HTML5 Web App Template</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/index/home_default.css"> 
-    <link rel="stylesheet" type="text/css" href="../css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/includes.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel=stylesheet type=text/css href="../css/connexion.css">
    
         

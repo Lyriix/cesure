@@ -5,8 +5,10 @@
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/home_default.css">
-        <link rel="stylesheet" type="text/css" href="../css/header_menu.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/general.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/includes.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/form.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/menu.css">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
@@ -18,16 +20,7 @@
                 @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
         </style>
         
-        <script type="application/javascript">
-            $.afui.autoLaunch = false; //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
-            /* This function runs when the content is loaded.*/
-            $.afui.useOSThemes=false;
-             $(document).ready(function(){
-                setTimeout(function(){
-                    $.afui.launch();
-                },1500);
-            });
-        </script>
+        
     </head>
 
     <body id="home" class="v2">
@@ -37,8 +30,10 @@
         <!-- Menu -->
         <?php include('../includes/menu_membre.php');?>
 
-        <article id="home">
+        <article id="art_orange">
             <p>Bienvenue sur la carte du monde des stages</p>
+        </article>
+        <article id="article_pont">
         </article>
 
         <!-- Pied de page -->

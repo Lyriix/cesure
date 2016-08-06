@@ -1,7 +1,7 @@
 <!-- Pied de page -->
 <footer id="info-content">
     <nav>
-        <ul class="info">
+        <ul>
             <li><a href="/www/modules/contact.php">Contact</a>
             </li>
             <li><a href="#">Copyright</a>

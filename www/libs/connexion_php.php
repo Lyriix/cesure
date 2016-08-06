@@ -1,7 +1,5 @@
 <?php 
-
 // Vérification de l'authentification de l'utilisateur 
-
 //Connexion à la bdd 
 try
 {
@@ -46,15 +44,13 @@ else
     
     /*Connexion automatique */
     
-    if($_POST['connexion_automatique'] == true)
+    if(isset($_POST['connexion_automatique']) )
     {
         setcookie('email',$email,time()+365*24*3600,null,null,false,true);
         setcookie('mdp',$mdp_hache,time()+365*24*3600,null,null,false,true);
     }
     
     header('Location: ../modules/acceuil.php',true);/*********************/
-    
-   // echo 'vous êtes connecté(e)';
-    
+   // echo 'vous êtes connecté(e)'; 
 }
 ?>

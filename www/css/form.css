@@ -1,23 +1,64 @@
-#filter-aera {
-    display:block;
-    flex: 1;
-    color: white;
-    background-color: darkred;
-    border-radius: 8px;
-    flex: 1;
-    text-align: center;
-    max-width: 30vw;
+
+.connexion {
+   /* background-color:gray;
+    
+    display: inline-block;
+    position: absolute;
+    
+    margin-left: 30%;
+    margin-top: 30%;
+    
+    border-radius: 20px;
+    */
+    
+     background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 450px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    
 }
 
-
-form p, #filter-aera>p {
-
-    text-align: center;
-    font-size: 1.2em;
-    background-color:firebrick;
-    border-radius: 8px;
+.connexion input{
+     width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
+.connexion input[type="submit"]{
+    width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #FFCC02 /*#09C*/;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
 
-
-
+.connexion input[type="submit"]:hover{
+    background: #fff;
+  color: #09C;
+}

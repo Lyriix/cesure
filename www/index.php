@@ -16,30 +16,20 @@ if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="css/home_default.css">
-        <link rel="stylesheet" type="text/css" href="css/header_menu.css">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/includes.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
         <meta charset="UTF-8">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-      
-
         <style>
                 @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
                 @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
 
         </style>
 
-        <script type="application/javascript">
-            $.afui.autoLaunch = false; //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
-            /* This function runs when the content is loaded.*/
-            $.afui.useOSThemes=false;
-             $(document).ready(function(){
-                setTimeout(function(){
-                    $.afui.launch();
-                },1500);
-            });
-        </script>
     </head>
 
     <body id="home" class="v2">
@@ -52,13 +42,11 @@ if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
         
         <?php include('includes/menu_non_membre.php');?>
 
-        <article>
-        <!-- Informations sur le contenu du site -->
-        </article>
-        <aside id="connexion">
+        <article id="art_orange">
             <?php include('modules/connexion.php'); ?>
-        </aside>
-
+        </article>
+        <article id="art_pont">
+        </article>
         <!-- Pied de page -->
         <?php include('includes/pieddepage.php');?>
 

@@ -8,9 +8,10 @@ session_start(); //On démarre la session avant toute chose
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="/www/css/index/home_default.css">
-        <link rel="stylesheet" type="text/css" href="/www/css/index_main.less.css" class="main-less">
-        <link rel="stylesheet" type="text/css" href="/www/css/connexion.css">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/includes.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 

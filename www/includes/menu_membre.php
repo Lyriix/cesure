@@ -1,30 +1,34 @@
 <!-- Menu -->
-<ul class="main-nav">
-    <li class="dropdown">
-        <a href="acceuil.php">ACCEUIL<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropbtn">ANNEES<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
-        <div class="dropdown-content">
-            <a href="cesures_201617.php">2016-2017</a>
-            <a href="#">2015-2016</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropbtn"> LISTINGS<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
-        <div class="dropdown-content">
-            <a href="/www/modules/listing.php">PAR FILLIERE</a>
-            <a href="#">PAR ENTREPRISE</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="/www/modules/addInternship.php" class="dropbtn">AJOUTER UN STAGE<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
-    </li>
-    <li class="dropdown">
-        <a href="/www/modules/profil.php" class="dropbtn">PROFIL<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
-    </li>
-    
-    <li class="dropdown" id="sign">
-        <a href="/www/libs/deconnexion_php.php" class="dropbtn">DECONNEXION<img src="/www/images/icon/arrow-down2.png" alt="arrow"></a>
-    </li>
-</ul>
+<nav>
+    <ul>
+        <li class="current">
+            <a href="acceuil.php">ACCEUIL<span class="arrow"></span></a>
+        </li>
+        <li>
+            <a href="#" >ANNEES<span class="arrow"></span></a>
+            <ul class="sub_menu">
+                <li class="arrow_top"></li>
+                <li><a class="subCurrent" href="cesures_201617.php">2016-2017</a></li>
+                <li><a href="#">2015-2016</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#" class="dropbtn"> LISTINGS<span class="arrow"></span></a>
+            <ul class="sub_menu">
+                <li class="arrow_top"></li>
+                <li><a href="/www/modules/listing.php">PAR FILLIERE</a></li>
+                <li><a href="#">PAR ENTREPRISE</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/www/modules/addInternship.php">AJOUTER UN STAGE</a>
+        </li>
+        <li>
+            <a href="/www/modules/profil.php">PROFIL</a>
+        </li>
+
+        <li>
+            <a href="/www/libs/deconnexion_php.php" >DECONNEXION</a>
+        </li>
+    </ul>
+</nav>
