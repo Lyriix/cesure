@@ -1,6 +1,7 @@
 <!--
-<?php
 
+<?php
+session_start();
 if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
 {
     //Il faut le connecter directement en l'envoyant sur la page d'acceuil du membre connecté
