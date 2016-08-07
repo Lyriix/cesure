@@ -1,3 +1,12 @@
+<?php
+    if (!isset($_SESSION)) { session_start(); }
+    if(!isset($_SESSION['nom']))
+    {
+       // echo "<p style=font-size:30px>Vous n'etes pas connecté, vous devez être connecté pour acceder à cet espace</p>";
+        //echo "<p style=font-size:30px><a  href='/www/modules/index.php'>Retourner à l'acceuil</a></p>";
+        header("Location:../modules/index.php",true);
+}
+?>
 <!DOCTYPE html>
 <html>
     <!--
@@ -5,10 +14,10 @@
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="css/general.css">
-        <link rel="stylesheet" type="text/css" href="css/includes.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/general.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/includes.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/form.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/menu.css">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
@@ -39,9 +48,9 @@
         <!-- Menu -->
         <?php include('../includes/menu_membre.php');?>
 
-        
+        <article id=art_orange>
         <?php include('../libs/detail_stage_php.php'); ?>
-
+        </article>
         <!-- Pied de page -->
         <?php include('../includes/pieddepage.php');?>
 

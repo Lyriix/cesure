@@ -5,10 +5,10 @@
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="css/general.css">
-        <link rel="stylesheet" type="text/css" href="css/includes.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/general.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/includes.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/form.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/menu.css">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
@@ -44,8 +44,8 @@
         <?php echo 'a';?>
         <!-- Menu -->
         <?php include('../includes/menu_membre.php');?>
-
-        <form method="post" action="MAILTO:someone@example.com" enctype="text/plain">
+<article id=art_orange>
+        <form class="connexion" method="post" action="MAILTO:someone@example.com" enctype="text/plain">
             <p>
                 <label for="name">Nom</label>
                 <input type="text" name="name">
@@ -70,10 +70,11 @@
             <p>
                 <input type=submit  onclick="mail()" name=submit value="Envoyer le message">
             </p>
-        </form>
+        
         <p> Pour fonctionner, vous devez avoir configuré un logiciel d'envoi d'email (Outlook, Mail OSx ...)</p>
         <p> Autrement contacter directement : someone@exampple.com</p>
-            
+        </form>
+        </article> 
 
         <!-- Pied de page -->
         <?php include('../includes/pieddepage.php');?>

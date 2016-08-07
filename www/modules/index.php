@@ -17,10 +17,10 @@ if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="css/general.css">
-        <link rel="stylesheet" type="text/css" href="css/includes.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/general.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/includes.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/form.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/menu.css">
         <meta charset="UTF-8">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -37,19 +37,19 @@ if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
 
 
         <!-- en tete -->
-        <?php include('includes/entete.php');?>
+        <?php include('../includes/entete.php');?>
         
         <!-- Menu -->
         
-        <?php include('includes/menu_non_membre.php');?>
+        <?php include('../includes/menu_non_membre.php');?>
 
         <article id="art_orange">
-            <?php include('modules/connexion.php'); ?>
+            <?php include('../modules/connexion.php'); ?>
         </article>
         <article id="art_pont">
         </article>
         <!-- Pied de page -->
-        <?php include('includes/pieddepage.php');?>
+        <?php include('../includes/pieddepage.php');?>
 
     </body>
 

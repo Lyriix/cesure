@@ -1,5 +1,11 @@
-<?php 
-session_start(); //On démarre la session avant toute chose
+<?php
+    if (!isset($_SESSION)) { session_start(); }
+    if(!isset($_SESSION['nom']))
+    {
+       // echo "<p style=font-size:30px>Vous n'etes pas connecté, vous devez être connecté pour acceder à cet espace</p>";
+        //echo "<p style=font-size:30px><a  href='/www/modules/index.php'>Retourner à l'acceuil</a></p>";
+        header("Location:../modules/index.php",true);
+}
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,5 +1,5 @@
 <?php 
-session_start();
+if (!isset($_SESSION)) { session_start(); }
 
 // Suppression des variables de session et de la session
 $_SESSION = array();
@@ -9,5 +9,5 @@ session_destroy();
 setcookie('login', '');
 setcookie('pass_hache', '');
 
-header('Location:/www/index.php');
+header('Location:/www/modules/index.php');
 ?>

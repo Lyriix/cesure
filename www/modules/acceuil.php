@@ -1,5 +1,14 @@
+<?php
+    if (!isset($_SESSION)) { session_start(); }
+    if(!isset($_SESSION['nom']))
+    {
+       // echo "<p style=font-size:30px>Vous n'etes pas connecté, vous devez être connecté pour acceder à cet espace</p>";
+        //echo "<p style=font-size:30px><a  href='/www/modules/index.php'>Retourner à l'acceuil</a></p>";
+        header("Location:../modules/index.php",true);
+}
+?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <!--
   * Please see the included README.md file for license terms and conditions.
   -->
@@ -11,7 +20,6 @@
         <link rel="stylesheet" type="text/css" href="/www/css/menu.css">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
 
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
 
@@ -31,9 +39,9 @@
         <?php include('../includes/menu_membre.php');?>
 
         <article id="art_orange">
-            <p>Bienvenue sur la carte du monde des stages</p>
+            <?php include('../libs/acceuil_php.php'); ?>
         </article>
-        <article id="article_pont">
+        <article id="art_pont">
         </article>
 
         <!-- Pied de page -->

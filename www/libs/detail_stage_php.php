@@ -30,7 +30,7 @@ echo '<p>' . $donnees_cesure['descriptif'] . '</p>';
 {
 ?>
 
-<article>
+<section>
     <h1>Détails de la cesure : </h1>
     <p>Filière : <?php echo $donnees_cesure['filiere'];?> </p>
     <p>Majeure : <?php echo $donnees_cesure['majeure'];?> </p>
@@ -39,19 +39,19 @@ echo '<p>' . $donnees_cesure['descriptif'] . '</p>';
     <p>Pays : <?php echo $donnees_cesure['pays'];?> </p>
     <p>Ville : <?php echo $donnees_cesure['ville'];?> </p>
     <p>Descriptif : <?php echo $donnees_cesure['descriptif'];?> </p>
-</article>
+</section>
 
 <?php
 }   
 while($donnees_eleve = $req_eleve->fetch())
 {
 ?>
-    <article>
+    <section>
         <h1>A réalisé la cesure : </h1>
         <p>Prénom : <?php echo $donnees_eleve['nom'];?> </p>
         <p>Nom : <?php echo $donnees_eleve['prenom'];?> </p>
         <p>E-mail <?php echo $donnees_eleve['email'];?> </p>
-    </article>
+    </section>
         
 <?php
 }

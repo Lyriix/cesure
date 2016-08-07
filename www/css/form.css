@@ -1,5 +1,5 @@
 
-.connexion {
+.connexion, .formulaireAjout {
    /* background-color:gray;
     
     display: inline-block;
@@ -17,7 +17,7 @@
   margin: auto;
   position: relative;
   width: 550px;
-  height: 450px;
+  min-height: 350px;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
   font-style: italic;
@@ -35,7 +35,7 @@
     
 }
 
-.connexion input{
+.connexion input, .connexion textarea, .formulaireAjout input, .formulaireAjout select,.formulaireAjout textarea{
      width: 375px;
   display: block;
   border: 1px solid #999;
@@ -45,7 +45,7 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-.connexion input[type="submit"]{
+.connexion input[type="submit"], .formulaireAjout input[type="submit"], .formulaireAjout input[type="reset"]{
     width: 100px;
   position: absolute;
   right: 20px;
@@ -57,8 +57,16 @@
   border-radius: 15px;
   border: 1p solid #999;
 }
+.formulaireAjout input[type="reset"]{
+    right: 140px;
+}
 
-.connexion input[type="submit"]:hover{
+.connexion input[type="submit"]:hover, .formulaireAjout input[type="submit"]:hover, .formulaireAjout input[type="reset"]:hover{
     background: #fff;
   color: #09C;
 }
+
+.connexion textarea, .formulaireAjout textarea{
+    height: 10vw;
+}
+

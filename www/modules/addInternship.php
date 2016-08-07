@@ -1,3 +1,14 @@
+<?php
+    if (!isset($_SESSION)) { session_start(); }
+    if(!isset($_SESSION['nom']))
+    {
+       // echo "<p style=font-size:30px>Vous n'etes pas connecté, vous devez être connecté pour acceder à cet espace</p>";
+        //echo "<p style=font-size:30px><a  href='/www/modules/index.php'>Retourner à l'acceuil</a></p>";
+        header("Location:../modules/index.php",true);
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
     <!--
@@ -5,10 +16,10 @@
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="css/general.css">
-        <link rel="stylesheet" type="text/css" href="css/includes.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/general.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/includes.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/form.css">
+        <link rel="stylesheet" type="text/css" href="/www/css/menu.css">
         <title>Cesure Map</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
@@ -24,6 +35,7 @@
 
         <script src="cordova.js" id="xdkJScordova_"></script>
 
+        
         <script src="js/app.js"></script>
         <!-- for your event code, see README and file comments for details -->
         <script src="js/init-app.js"></script>
@@ -52,77 +64,68 @@
         <!-- Menu -->
         <?php include('../includes/menu_membre.php')?>
 
+<article id="art_orange">
     
-        
-         <section id="formulaireStage">
-            <article id="addStage">
-                <header>
-                    <h1>AJOUT D'UN STAGE</h1>
-                </header>
-                <form id="formulaireAjout" method="post" >
-                  
-                    <p><label for="nom" id="nom">Nom</label>
-                    <input type=text name="nom" placeholder="Durand">
-                    </p>
-                    
-                    <p><label for="prenom" id="prenom">Prenom</label>
-                    <input type=text name="prenom" placeholder="Jean">
-                    </p>
-                    <p> <label for="mail" id="mail">E-Mail</label>
-                    <input type="email" name="mail" placeholder="jean.durand@cpe.fr" required>
-                    </p>
-                    <p>Filière
-                        <select name="filiere" id="filiere">
-                            <option class="" value="">Choisissez une Filière</option>
-                        </select>
-                    </p>
-                     
-              
-                    <p>Spécialité
-                        <label for="specialite"></label>
-                        <select name="specialite" id="specialite">
-                            <option class="" value="-">-</option>
-                        </select> 
-                    </p>
-                    <p>Stage
-                            <select name="stage" id="stage">
-                                <option class="stage" value="Cesure">Césure</option>
-                                <option class="stage" value="PFE">PFE</option>
-                                <option class="stage" value="3 mois">Stage 3 mois</option>
-                            </select>
-                    </p>
-                    <p>Zone Géographique
-                        <label for="zone"></label>
-                        <select name="Zone Géographique" id="zone">
-                            <option value="">-</option>
-                            <option value="europe">Europe</option>
-                            <option value="amerique-du-nord">Amérique du Nord</option>
-                            <option value="amerique-du-sud">Amérique du Sud</option>
-                            <option value="asie">Asie</option>
-                            <option value="oceanie">Oceanie</option>
-                        </select>
-                    </p>
-                    
-                    <p> 
-                        <label for="descripion" id="description">Déscription du stage</label>
-                        <textarea name="description">
-Secteur d'activité: 
-Salaire: 
-Projets Réalisés:
-...
-                        </textarea>
-                    </p>
-                    
-                    <input type="submit" value="submit">
-                    <input type="reset" value="reset">
-                </form>
-            </article>
-        </section>
+
+    <form class="formulaireAjout" method="post" >
+        <header>Ajouter un stage</header>
+        <p><label for="nom" id="nom">Nom</label>
+        <input type=text name="nom" placeholder="Durand">
+        </p>
+
+        <p><label for="prenom" id="prenom">Prenom</label>
+        <input type=text name="prenom" placeholder="Jean">
+        </p>
+        <p> <label for="mail" id="mail">E-Mail</label>
+        <input type="email" name="mail" placeholder="jean.durand@cpe.fr" required>
+        </p>
+        <p>Filière
+            <select name="filiere" id="filiere">
+                <option class="" value="">Choisissez une Filière</option>
+            </select>
+        </p>
+
+
+        <p>Spécialité
+            <label for="specialite"></label>
+            <select name="specialite" id="specialite">
+                <option class="" value="-">-</option>
+            </select> 
+        </p>
+        <p>Stage
+                <select name="stage" id="stage">
+                    <option class="stage" value="Cesure">Césure</option>
+                    <option class="stage" value="PFE">PFE</option>
+                    <option class="stage" value="3 mois">Stage 3 mois</option>
+                </select>
+        </p>
+        <p>Zone Géographique
+            <label for="zone"></label>
+            <select name="Zone Géographique" id="zone">
+                <option value="">-</option>
+                <option value="europe">Europe</option>
+                <option value="amerique-du-nord">Amérique du Nord</option>
+                <option value="amerique-du-sud">Amérique du Sud</option>
+                <option value="asie">Asie</option>
+                <option value="oceanie">Oceanie</option>
+            </select>
+        </p>
+
+        <p> 
+            <label for="descripion" >Déscription du stage</label>
+            <textarea rows="20" cols="60" name="description"></textarea>
+        </p>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</article>
+
 
          <!-- Pied de page -->
         <?php include('../includes/pieddepage.php')?>
 
-        <script src="js/form.js"></script>
+        <script src="/www/js/form.js"></script>
     </body>
 
 </html>

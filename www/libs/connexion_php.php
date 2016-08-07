@@ -1,4 +1,5 @@
 <?php 
+if (!isset($_SESSION)) { session_start(); }
 // Vérification de l'authentification de l'utilisateur 
 //Connexion à la bdd 
 try
@@ -24,7 +25,7 @@ else
     $mdp_hache = $_POST['mdp']; //pour que ceux qui recoivent 0000 comme mdp par défaut puissent se connecter et le changer
 }
 //vérification des identifiants
-$req = $bdd->prepare('SELECT id FROM tab_eleve WHERE email = :email AND mdp = :mdp');
+$req = $bdd->prepare('SELECT id, prenom FROM tab_eleve WHERE email = :email AND mdp = :mdp');
 $req->execute(array(
             'email'=> $email,
             'mdp' => $mdp_hache));
@@ -38,9 +39,9 @@ if(!$resultat) //Si on a pas de resultat
 }
 else
 {
-    session_start();
-    $_SESSION['id'] = $resultat['id'];
-    $_SESSION['email'] = $email;
+    //$_SESSION['id'] = $resultat['id'];
+   // $_SESSION['email'] = $email;
+    $_SESSION['nom'] = $resultat['prenom'];
     
     /*Connexion automatique */
     
